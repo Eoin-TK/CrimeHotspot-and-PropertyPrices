@@ -8,8 +8,6 @@ Description:	Previous research suggests that crime negatively impacts property p
 		boroughs of New York, we look to map crime hot spots and examine the impact on property prices in
 		these boroughs.
 
-Supervisor:	Dr. David Goulding
-
 ------------------------------------------------------------------------------------------------------------------------
 
 Directory Contents:
