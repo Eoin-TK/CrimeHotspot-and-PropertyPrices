@@ -1,0 +1,98 @@
+DATA9003 - Research Project
+========================================================================================================================
+
+Title:		The Impact of Crime Hotspots on House Prices
+
+Description:	Previous research suggests that crime negatively impacts property prices overall, but that crime
+		hotspots have a more significant impact than specific crime occurences do. Using data from the five
+		boroughs of New York, we look to map crime hot spots and examine the impact on property prices in
+		these boroughs.
+
+Supervisor:	Dr. David Goulding
+
+------------------------------------------------------------------------------------------------------------------------
+
+Directory Contents:
+DATA9003 - Python package containing project code
+Report - All report/journal files (including figures)
+ProgressReport - Informal journal detailing weekly progress
+ArrestsVis - Jupyter Notebook used for visualising arrest data
+
+Data files are stored locally on a separate drive (D:\MyData)
+
++ MyData
+	+ crime
+		- NYPD_arrests_CLEAN.csv
+		- NYPD_arrests_FULL.csv
+		- NYPD_stations.csv
+	+ property
+		+ 2006
+			-2006_bronx.csv
+			-2006_broooklyn.csv
+			-2006_manhattan.csv
+			-2006_queens.csv
+			-2006_statenisland.csv
+		+ 2007
+			-2007_bronx.csv
+			...
+		.
+		.
+		.
+
+		+2021
+			-2021_bronx.csv
+			...
+
+------------------------------------------------------------------------------------------------------------------------
+
+DATA9003 Python Package Documentation
+
+archive
+	TYPE:		Sub-Directory
+	
+	DESCRIPTION:	Archive of obsolete/deprecated code files
+	
+	FILES:		SODA.py
+
+assets:
+	TYPE:		Sub-Directory
+	
+	DESCRIPTION:	Misc. data files
+	
+	FILES:		ArticleNumbers.json
+			SubwayLines.geojson
+
+LoadArrests:
+	TYPE:		Python Script
+	
+	DESCRIPTION:	Python functions to load the NYPD arrests dataset from local files
+	
+	FUNCTIONS:	OffBy
+			GetTable
+			GetStationCoords
+			LoadArrestsData
+
+PlotArrests:
+	TYPE:		Python Script
+	
+	DESCRIPTION:	Python functions to plot the NYPD arrests dataset once loaded
+	
+	FUNCTIONS:	AnnualArrests
+			OfnsTypeByBorough
+			OfnsDescByBorough
+			HeatMap_Static
+			HeatMap_Dynamic
+
+LoadSales:
+	TYPE:		Python Script
+	
+	DESCRIPTION:	Python functions to load the NYC house sales dataset from local files
+	
+	FUNCTIONS:	
+
+PlotSales:
+	TYPE:		Python Script
+	
+	DESCRIPTION:	Python functions to plot the NYC house sales dataset once loaded
+	
+	FUNCTIONS:	
